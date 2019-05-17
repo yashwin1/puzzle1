@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/btn_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -24,7 +24,10 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.100000024"
+        android:textFontWeight="2dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
 
     <LinearLayout
 
@@ -38,43 +41,55 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998">
+        app:layout_constraintTop_toBottomOf="@+id/btn_reset"
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:id="@+id/btn_1X1"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="प" />
+            android:text="प"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X2"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="क्षी" />
+            android:text="क्षी"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X3"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="रा" />
+            android:text="रा"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_1X4"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="ज" />
+            android:text="ज"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -91,43 +106,55 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44">
+        app:layout_constraintTop_toBottomOf="@+id/btn_reset"
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:id="@+id/btn_2X1"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="ब" />
+            android:text="ब"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X2"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="क" />
+            android:text="क"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X3"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="श" />
+            android:text="श"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_2X4"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="ह" />
+            android:text="ह"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -142,44 +169,56 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.54">
+        app:layout_constraintTop_toBottomOf="@+id/btn_reset"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <Button
             android:id="@+id/btn_3X1"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="क" />
+            android:text="क"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X2"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="झ" />
+            android:text="झ"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X3"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="ग" />
+            android:text="ग"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_3X4"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="सी" />
+            android:text="सी"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -199,40 +238,52 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64">
+        app:layout_constraintTop_toBottomOf="@+id/btn_reset"
+        app:layout_constraintVertical_bias="0.65999997">
 
         <Button
             android:id="@+id/btn_4X1"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="री" />
+            android:text="री"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X2"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="त" />
+            android:text="त"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X3"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="ट" />
+            android:text="ट"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_4X4"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="80dp"
             android:layout_weight="1"
             android:background="@drawable/default_button"
-            android:text="ना" />
+            android:text="ना"
+            android:textFontWeight="2dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -264,31 +315,41 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
+                    android:layout_marginLeft="12dp"
                     android:text="शब्द"
-                    android:gravity="center_horizontal"
-                    android:textSize="20sp" />
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="35sp" />
                 <TextView
                     android:id="@+id/girl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
                     android:padding="16dp"
+                    android:gravity="center_vertical"
                     android:text="हसीना"
-                    android:textSize="16sp" />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
                 <TextView
                     android:id="@+id/horse"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
                     android:padding="16dp"
                     android:text="पक्षीराज"
-                    android:textSize="16sp" />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
                 <TextView
                     android:id="@+id/goat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
                     android:padding="16dp"
                     android:text="बकरी"
-                    android:textSize="16sp" />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
 
 
             </LinearLayout>
