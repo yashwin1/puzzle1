@@ -14,13 +14,11 @@ import java.util.ArrayList;
 //If correct answer already given then remove from list
 //Reset button
 
-
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button[][] buttons = new Button[4][4];
     private String word;
-    private int btnCounter=0;
+    private int btnCounter = 0;
     public static final String TAG = "MainActivity";
     private View prev;
     public String soln[];
@@ -35,9 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         soln[0] = "हसीना";
         soln[1] = "पक्षीराज";
         soln[2] = "बकरी";
-        for(int i=1;i<=4;i++){
-            for(int j=1;j<=4;j++){
-                String buttonID = "btn" + "_" + i+"X"+j;
+        for(int i = 1; i <= 4; i++){
+            for(int j = 1; j <= 4; j++){
+                String buttonID = "btn" + "_" + i + "X" + j;
                 int resID = getResources().getIdentifier(buttonID, "id", getPackageName());
                 buttons[i-1][j-1] = findViewById(resID);
                 buttons[i-1][j-1].setOnClickListener(this);
@@ -49,14 +47,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v) {
                 btnCounter = 0;
-                while(clicked_btns.size()!=0) {
+                while(clicked_btns.size() != 0) {
                     clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                     clicked_btns.remove(0);
                 }
             }
         });
     }
-
 
 
     @Override
@@ -72,18 +69,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             v.setBackgroundResource(R.drawable.pressed);
         }
         else {
-            btnCounter=btnCounter+1;
+            btnCounter=btnCounter + 1;
 
-            if(Math.abs(prev.getId()-v.getId())==1) {
-                if(btnCounter==2){
-                    if(Math.abs(prev.getId()-v.getId())==1){
-                        horizontal_check=1;
+            if(Math.abs(prev.getId()-v.getId()) == 1) {
+                if(btnCounter == 2){
+                    if(Math.abs(prev.getId()-v.getId()) == 1){
+                        horizontal_check = 1;
                     }
-                    else if(Math.abs(prev.getId()-v.getId())==4){
-                        horizontal_check=0;
+                    else if(Math.abs(prev.getId()-v.getId()) == 4){
+                        horizontal_check = 0;
                     }
                 }
-                if(horizontal_check==1) {
+                if(horizontal_check == 1) {
                     prev = v;
                     //btnCounter = btnCounter + 1;
                     word = word + ((Button) v).getText().toString();
@@ -111,7 +108,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 clicked_btns.get(0).setEnabled(false);
                                 clicked_btns.remove(0);
                             }
-
                         }
                     }
                     Log.d(TAG, "onClick: " + word);
@@ -119,10 +115,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 else{
-                    while(clicked_btns.size()!=0){
+                    while(clicked_btns.size() != 0){
                         clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                         clicked_btns.remove(0);
-
                     }
                     prev = v;
                     btnCounter = 1;
@@ -132,19 +127,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     clicked_btns.add((Button)v);
                     v.setBackgroundResource(R.drawable.pressed);
                 }
-
-
-
             }
 
-            else if(Math.abs(prev.getId()-v.getId())==4){
+            else if(Math.abs(prev.getId()-v.getId()) == 4){
                 //btnCounter=btnCounter+1;
                 if(btnCounter==2){
-                    if(Math.abs(prev.getId()-v.getId())==1){
-                        horizontal_check=1;
+                    if(Math.abs(prev.getId()-v.getId()) == 1){
+                        horizontal_check = 1;
                     }
-                    else if(Math.abs(prev.getId()-v.getId())==4){
-                        horizontal_check=0;
+                    else if(Math.abs(prev.getId()-v.getId()) == 4){
+                        horizontal_check = 0;
                     }
                 }
                 if(horizontal_check==0) {
@@ -175,7 +167,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                 clicked_btns.get(0).setEnabled(false);
                                 clicked_btns.remove(0);
                             }
-
                         }
                     }
                     Log.d(TAG, "onClick: " + word);
@@ -183,10 +174,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 else{
-                    while(clicked_btns.size()!=0){
+                    while(clicked_btns.size() != 0){
                         clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                         clicked_btns.remove(0);
-
                     }
                     prev = v;
                     btnCounter = 1;
@@ -196,15 +186,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     clicked_btns.add((Button)v);
                     v.setBackgroundResource(R.drawable.pressed);
                 }
-
-
             }
 
             else{
-                while(clicked_btns.size()!=0){
+                while(clicked_btns.size() != 0){
                     clicked_btns.get(0).setBackgroundResource(R.drawable.default_button);
                     clicked_btns.remove(0);
-
                 }
                 prev = v;
                 btnCounter = 1;
@@ -215,7 +202,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 v.setBackgroundResource(R.drawable.pressed);
             }
         }
-
-
     }
 }
